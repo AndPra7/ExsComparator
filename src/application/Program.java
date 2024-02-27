@@ -19,10 +19,8 @@ public class Program {
 		list.add(new Product("Tablet", 450.00));
 		
 		// Implementation anonymous function lambda expression
-		// arrow function
-		Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());			
-		
-		list.sort(comp);
+		// arrow function		
+		list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 		
 		for(Product p : list) {
 			System.out.println(p);
